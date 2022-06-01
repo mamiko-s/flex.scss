@@ -11,35 +11,41 @@
         row-gap: 50px;
     }
 
+    .profiles {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 25px;
+    }
+
     .profiles>aside:nth-child(1) {
         @include skillProfile("/img/member1.png");
-        width: 30vh;
-        height: 30vh;
     }
 
     .profiles>aside:nth-child(2) {
         @include skillProfile("/img/member2.png");
-        width: 30vh;
-        height: 30vh;
     }
 
     .profiles>aside:nth-child(3) {
         @include skillProfile("/img/member3.png");
-        width: 30vh;
-        height: 30vh;
     }
 
     .profiles>aside:nth-child(4) {
         @include skillProfile("/img/member4.png");
-        width: 30vh;
-        height: 30vh;
     }
-
 
     .profiles h3,
     .profiles span,
     .profiles div {
         display: none;
+    }
+
+    .design-skills {
+        @include flexColumn(15px, center, unset);
+
+        >div {
+            @include flexColumn(15px, center, unset);
+        }
     }
 
     .contact {

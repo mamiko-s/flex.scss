@@ -47,6 +47,13 @@ section > article:nth-child(1) > h2 {
   font-size: 14px;
 }
 
+body {
+  background-image: url();
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 @media (min-width: 300px) {
   footer {
     display: -webkit-box;
@@ -66,42 +73,91 @@ section > article:nth-child(1) > h2 {
             flex-direction: column;
     row-gap: 50px;
   }
+  .profiles {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    row-gap: 25px;
+  }
   .profiles > aside:nth-child(1) {
     background: url("/img/member1.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    width: 30vh;
-    height: 30vh;
+    width: 35vh;
+    height: 35vh;
+    border-radius: 50%;
   }
   .profiles > aside:nth-child(2) {
     background: url("/img/member2.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    width: 30vh;
-    height: 30vh;
+    width: 35vh;
+    height: 35vh;
+    border-radius: 50%;
   }
   .profiles > aside:nth-child(3) {
     background: url("/img/member3.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    width: 30vh;
-    height: 30vh;
+    width: 35vh;
+    height: 35vh;
+    border-radius: 50%;
   }
   .profiles > aside:nth-child(4) {
     background: url("/img/member4.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    width: 30vh;
-    height: 30vh;
+    width: 35vh;
+    height: 35vh;
+    border-radius: 50%;
   }
   .profiles h3,
   .profiles span,
   .profiles div {
     display: none;
+  }
+  .design-skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 15px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+  .design-skills > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 15px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
   }
   .contact {
     display: -webkit-box;
