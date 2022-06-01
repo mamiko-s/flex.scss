@@ -56,6 +56,53 @@ section > article:nth-child(1) > h2 {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
+  .skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 50px;
+  }
+  .profiles > aside:nth-child(1) {
+    background: url("/img/member1.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30vh;
+    height: 30vh;
+  }
+  .profiles > aside:nth-child(2) {
+    background: url("/img/member2.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30vh;
+    height: 30vh;
+  }
+  .profiles > aside:nth-child(3) {
+    background: url("/img/member3.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30vh;
+    height: 30vh;
+  }
+  .profiles > aside:nth-child(4) {
+    background: url("/img/member4.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30vh;
+    height: 30vh;
+  }
+  .profiles h3,
+  .profiles span,
+  .profiles div {
+    display: none;
+  }
   .contact {
     display: -webkit-box;
     display: -ms-flexbox;
