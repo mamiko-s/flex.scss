@@ -41,11 +41,76 @@
     }
 
     .design-skills {
-        @include flexColumn(15px, center, unset);
+        @include flexColumn(60px, center, unset);
+        font-size: 14px;
+        font-weight: 300;
 
-        >div {
+        >div:nth-child(1) {
+            @include flexColumn(0px, center, unset);
+            text-align: center;
+        }
+
+        >div:nth-child(2) {
             @include flexColumn(15px, center, unset);
         }
+    }
+
+    .skill-description {
+        @include flexColumn(25px);
+    }
+
+    .progress-bar {
+        width: 100%;
+        @include flexColumn(10px, unset, unset);
+        color: whitesmoke;
+
+        span {
+            height: 4vh;
+            display: flex;
+            font-weight: 600;
+            padding-left: 10%;
+            align-items: center;
+            background-color: $defaultColor;
+        }
+
+        %p-progress {
+            width: 100%;
+            background-color: gainsboro;
+            display: flex;
+        }
+
+        >p:nth-child(1) {
+            @extend %p-progress;
+
+            >span {
+                width: 80%;
+            }
+        }
+
+        >p:nth-child(2) {
+            @extend %p-progress;
+
+            >span {
+                width: 75%;
+            }
+        }
+
+        >p:nth-child(3) {
+            @extend %p-progress;
+
+            >span {
+                width: 60%;
+            }
+        }
+
+        >p:nth-child(4) {
+            @extend %p-progress;
+
+            >span {
+                width: 70%;
+            }
+        }
+
     }
 
     .contact {
