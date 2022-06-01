@@ -1,0 +1,68 @@
+@media (min-width: 300px) {
+
+    footer {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .skills {
+        display: flex;
+        flex-direction: column;
+        row-gap: 50px;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+
+        >article:nth-child(2) {
+            display: flex;
+            flex-direction: column;
+            row-gap: 35px;
+        }
+
+        >article:nth-child(2)>article {
+            display: flex;
+            flex-direction: column;
+            row-gap: 35px;
+            font-size: 14px;
+            font-weight: 300;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            row-gap: 15px;
+            width: 100%;
+        }
+
+        input,
+        textarea {
+            width: 90%;
+            padding: 3%;
+            border: 1px solid lightgray;
+            font-size: 18px;
+            font-weight: 300;
+        }
+
+        textarea {
+            height: 20vh;
+            font-family: $defaultFont;
+        }
+
+        [type="submit"] {
+            width: 95%;
+            background-color: $defaultColor;
+            color: whitesmoke;
+            border: 0px none transparent;
+        }
+
+
+    }
+}

@@ -6,25 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flex SCSS</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css
+    ">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <main>
-        <header id="home">
-            <article>
+    <header id="home">
+        <article>
+            <div>
+                <a href="#" class="fa-brands fa-facebook"></a>
+                <a href="#" class="fa-brands fa-github"></a>
+                <a href="#" class="fa-brands fa-linkedin-in"></a>
+                <a href="#" class="fa-solid fa-envelope"></a>
+            </div>
+            <nav>
                 <div>
-                    <a href="#" class="fa-brands fa-facebook"></a>
-                    <a href="#" class="fa-brands fa-github"></a>
-                    <a href="#" class="fa-brands fa-linkedin-in"></a>
-                    <a href="#" class="fa-solid fa-envelope"></a>
+                    <i></i>
+                    <h1>
+                        FLEX
+                    </h1>
                 </div>
-                <nav>
-                    <div>
-                        <i></a>
-                            <h1>FLEX</h1>
-                    </div>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#gallery">Portfolio</a></li>
+                    <li><a href="#skills">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <details>
+                    <summary class="fa-solid fa-bars"></summary>
                     <ul>
                         <li><a href="#home">Home</a></li>
                         <li><a href="#services">Services</a></li>
@@ -32,100 +43,163 @@
                         <li><a href="#skills">Team</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
-                    <details>
-                        <summary class="fa-solid fa-bars"></summary>
-                        <ul>
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#services">Services</a></li>
-                            <li><a href="#gallery">Portfolio</a></li>
-                            <li><a href="#skills">Team</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                    </details>
-                </nav>
-            </article>
-        </header>
-
-        <!-- SERVICE SECTION -->
+                </details>
+            </nav>
+        </article>
+    </header>
+    <main>
+        <!-- SERVICES SECTION -->
         <section class="services" id="services">
             <article>
                 <h2>Our Services</h2>
-                <span class="subheader">We design mobile-first websites for you</span>
+                <span class="subheader">We design bobile-first websites for you</span>
             </article>
             <article>
                 <aside>
-                    <a href="#" class="fa-solid fa-file-code"></a>
+                    <i class="fa-solid fa-file-code"></i>
                     <div>
                         <h3>HTML5 CODING</h3>
                         <p>
-                            HTMK5 is a structure markuo language that allows the developer include media elements,
-                            creat
+                            HTML5 is a structure markup language that
+                            allows the developer include media elements,
+                            create responsive websites, and provide content.
+                        </p>
+                    </div>
+                </aside>
+                <aside>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <div>
+                        <h3>CSS CODING</h3>
+                        <p>
+                            By responsive CSS we are able to create
+                            different layouts to different devices.
+                            Plus, we can include third party frameworks to work with, such as Bootstrap.
+                        </p>
+                    </div>
+                </aside>
+                <aside>
+                    <i class="fa-brands fa-sass"></i>
+                    <div>
+                        <h3>SCSS CODING</h3>
+                        <p>
+                            As a preprocessor, SCSS is a better approach to create CSS. Through SCSS I also can create
+                            minified CSS files with a cleaner code.
+                        </p>
+                    </div>
+                </aside>
+                <aside>
+                    <i class="fa-brands fa-github"></i>
+                    <div>
+                        <h3>GitHub</h3>
+                        <p>
+                            As a Version Control Software, GitHub allows me to track my project files and create
+                            different versions of them.
                         </p>
                     </div>
                 </aside>
             </article>
         </section>
-
+        <!-- SERVICES SECTION END -->
         <!-- GALLERY SECTION -->
         <section class="gallery" id="gallery">
             <article>
                 <h2>Our Portfolio</h2>
-                <span>Amazing work for our cliants</span>
+                <span class="subheader">Amazing work for our clients</span>
             </article>
             <article class="pics">
                 <aside>
-                    <h3>New Walk</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <h3>
+                        New Walk
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
                     <a href="#" class="fa-solid fa-magnifying-glass"></a>
                 </aside>
                 <aside>
-                    <h3>Boat</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <h3>
+                        Boat
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
                     <a href="#" class="fa-solid fa-magnifying-glass"></a>
                 </aside>
                 <aside>
-                    <h3>Urban</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <h3>
+                        Urban
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
                     <a href="#" class="fa-solid fa-magnifying-glass"></a>
                 </aside>
                 <aside>
-                    <h3>Cycling</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <h3>
+                        Cycling
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
                     <a href="#" class="fa-solid fa-magnifying-glass"></a>
                 </aside>
                 <aside>
-                    <h3>Digital era</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <h3>
+                        Digital Era
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
                     <a href="#" class="fa-solid fa-magnifying-glass"></a>
                 </aside>
                 <aside>
-                    <h3>Holizon</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <h3>
+                        Horizon
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
                     <a href="#" class="fa-solid fa-magnifying-glass"></a>
                 </aside>
                 <aside>
-                    <h3>Aquatic City</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <h3>
+                        Aquatic City
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
                     <a href="#" class="fa-solid fa-magnifying-glass"></a>
                 </aside>
                 <aside>
-                    <h3>New Path</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <h3>
+                        New Path
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
                     <a href="#" class="fa-solid fa-magnifying-glass"></a>
                 </aside>
             </article>
         </section>
-
+        <!-- GALLERY SECTION END -->
         <!-- SKILLS SECTION -->
         <section class="skills" id="skills">
             <article>
-                <h2>Our Team</h2>
-                <span class="sunheader">Our people are very united for your success</span>
+                <h2>
+                    our team
+                </h2>
+                <span class="subheader">
+                    Our people are very united for your success
+                </span>
             </article>
             <article class="profiles">
                 <aside>
-                    <h3>Jacob</h3>
-                    <span>Frontend Dev</span>
+                    <h3>
+                        Jacob
+                    </h3>
+                    <span>
+                        Frontend Dev
+                    </span>
                     <div>
                         <a href="#" class="fa-brands fa-facebook"></a>
                         <a href="#" class="fa-brands fa-github"></a>
@@ -133,8 +207,12 @@
                     </div>
                 </aside>
                 <aside>
-                    <h3>Davina</h3>
-                    <span>Backtend Dev</span>
+                    <h3>
+                        Sabina
+                    </h3>
+                    <span>
+                        Backend Dev
+                    </span>
                     <div>
                         <a href="#" class="fa-brands fa-facebook"></a>
                         <a href="#" class="fa-brands fa-github"></a>
@@ -142,8 +220,12 @@
                     </div>
                 </aside>
                 <aside>
-                    <h3>John</h3>
-                    <span>Fullstack Dev</span>
+                    <h3>
+                        Jonh
+                    </h3>
+                    <span>
+                        Fullstack
+                    </span>
                     <div>
                         <a href="#" class="fa-brands fa-facebook"></a>
                         <a href="#" class="fa-brands fa-github"></a>
@@ -151,8 +233,12 @@
                     </div>
                 </aside>
                 <aside>
-                    <h3>Francine</h3>
-                    <span>Team Leader</span>
+                    <h3>
+                        Francine
+                    </h3>
+                    <span>
+                        Team Leader
+                    </span>
                     <div>
                         <a href="#" class="fa-brands fa-facebook"></a>
                         <a href="#" class="fa-brands fa-github"></a>
@@ -162,7 +248,9 @@
             </article>
             <article class="design-skills">
                 <div>
-                    <h3>Design Skills</h3>
+                    <h3>
+                        Design Skills
+                    </h3>
                     <span>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </span>
@@ -170,15 +258,17 @@
                 <div>
                     <div class="skill-description">
                         <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed animi voluptatem at quos
-                            excepturi! Ipsa rem maxime nisi nobis. Dolore totam vero provident molestias, ducimus
-                            tempora
-                            voluptates odit hic harum.
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui velit rem repellendus vero
+                            reiciendis pariatur corrupti tempora magni aut, quisquam odio laboriosam quod! Voluptatem
+                            magni provident natus ut sed at, deleniti quod numquam culpa maxime qui ipsa nemo laudantium
+                            dolores. Repudiandae ipsum ratione suscipit numquam similique deleniti animi.
                         </p>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe assumenda minima itaque illum
-                            eius architecto suscipit ipsum provident quisquam temporibus quis ipsa, rerum laboriosam
-                            distinctio incidunt, voluptatum earum, sequi quas!
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, enim saepe magnam pariatur
+                            maiores nulla, aperiam quia ex ducimus perspiciatis obcaecati. Eius doloribus, praesentium,
+                            rerum vitae accusamus quisquam corrupti possimus culpa soluta dolorem numquam quam similique
+                            at ipsam inventore nostrum, molestias autem. Explicabo eligendi nobis dolor beatae quia
+                            impedit officia eaque. Tempore alias sapiente repellat. Aspernatur.
                         </p>
                     </div>
                     <div class="progress-bar">
@@ -198,7 +288,7 @@
                 </div>
             </article>
         </section>
-
+        <!-- SKILLS SECTION END -->
         <!-- CONTACT SECTION -->
         <section class="contact" id="contact">
             <article>
@@ -207,49 +297,48 @@
                 </h2>
                 <span class="subheader">Send message to us</span>
             </article>
-
             <article>
                 <article>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quod ab sapiente doloremque
-                        saepe
-                        vero? Nisi.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus inventore quas ad
+                        aliquid eveniet doloribus eum!
                     </p>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores cum repudiandae distinctio esse
-                        saepe aliquam! Hic ullam autem beatae quas itaque blanditiis dicta, molestias, nostrum tenetur
-                        id
-                        voluptatibus?
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus vel eum libero numquam quos
+                        asperiores velit iste nam quibusdam reprehenderit dolorum ipsum unde quas exercitationem
+                        delectus, minus aliquam?
                     </p>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolores magnam pariatur.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit et voluptates quos.
                     </p>
                     <p>
                         <span>
-                            Phone: <a href="tel:+10345666">10345666</a>
+                            Phone: <a href="tel:+10330336600">10330336600</a>
                         </span>
                         <span>
-                            Email: <a href="mailto:info@example.com">info@example.com</a>
+                            Email: <a href="mailto:info@example.com">
+                                info@example.com
+                            </a>
                         </span>
                         <address>
-                            2456 7th Street, Vancouver, V6C 3P2, British Clumbia, Canada
+                            2456 7th Street, Vancouver, V6C 3P2, British Columbia, Canada
                         </address>
                     </p>
                 </article>
                 <form method="post" action="thankyou.html">
-                    <a href="#" nput type="text" name="name" placeholder="Your Name">
-                        <a href="#" nput type="email" name="email" placeholder="Your Emailx">
-                            <a href="#" nput type="text" name="subject" placeholder="Subject">
-                                <textarea name="message" placeholder="Message"></textarea>
-                                <a href="#" nput type="submit" value="SEND MESSAGE">
+                    <input type="text" name="name" placeholder="Your Name">
+                    <input type="email" name="email" placeholder="Your Email">
+                    <input type="text" name="subject" placeholder="Subject">
+                    <textarea name="message" placeholder="Message"></textarea>
+                    <input type="submit" value="SEND MESSAGE">
                 </form>
             </article>
         </section>
-
+        <!-- CONTACT SECTION END -->
     </main>
     <footer>
         <span>Copyright &copy; Company Name</span>
-        <span>Design: by Students</span>
+        <span>Design: By Students</span>
     </footer>
 </body>
 
