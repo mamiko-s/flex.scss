@@ -1,0 +1,115 @@
+@media (min-width: 1000px) {
+    main {
+        padding: 15%;
+    }
+
+    .services {
+        div {
+            display: none;
+        }
+
+        aside {
+            width: 25vh;
+            height: 25vh;
+        }
+    }
+
+    .pics {
+        >aside:hover {
+            background-image: none;
+            background-color: $defaultColor;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            >h3,
+            >p,
+            >a {
+                display: block;
+                text-align: center;
+            }
+
+            >h3 {
+                padding: 4%;
+                border-bottom: 1px solid white;
+                font-weight: 300;
+            }
+
+            >p {
+                font-weight: 300;
+                padding: 4%;
+            }
+
+            >a {
+                text-decoration: none;
+                color: $defaultColor;
+                background-color: white;
+                border-radius: 50%;
+                padding: 4%;
+            }
+        }
+    }
+
+    %profile-pic-desktop {
+        width: 30vh;
+        height: 30vh;
+    }
+
+    .profiles {
+
+        >aside:nth-child(odd),
+        >aside:nth-child(even) {
+            @extend %profile-pic-desktop;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            row-gap: 15px;
+            color: white;
+        }
+
+        >aside:hover {
+            background-image: none;
+            background-color: $defaultColor;
+
+            >h3,
+            >span,
+            >div {
+                display: block;
+            }
+
+            >h3 {
+                border-bottom: 1px solid white;
+                font-weight: 300;
+            }
+
+            >div {
+                width: 50%;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            a {
+                border-radius: 50%;
+                padding: 6%;
+                font-size: 24px;
+                color: $defaultColor;
+                text-decoration: none;
+                background-color: white;
+            }
+        }
+
+
+    }
+
+    .skill-description {
+        width: 100%;
+    }
+
+    .progress-bar {
+        span {
+            height: 4vh;
+        }
+    }
+}

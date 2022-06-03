@@ -103,10 +103,6 @@
     .services {
         @include flexColumn(40px);
 
-        article:nth-child(2) {
-            @include flexColumn(40px);
-        }
-
         >article:nth-child(2) {
             @include flexColumn(40px);
         }
@@ -134,12 +130,13 @@
             background-color: $blockColor4;
         }
 
-        i {
-            font-size: 50px
-        }
-
         div {
             @include flexColumn(10px);
+            text-align: center;
+        }
+
+        i {
+            font-size: 50px
         }
     }
 
@@ -191,7 +188,6 @@
             @include portfolioPics("/img/p8.jpg");
         }
     }
-
 
     .skills {
         display: flex;
@@ -279,7 +275,7 @@
             @extend %p-progress;
 
             >span {
-                width: 75%;
+                width: 70%;
             }
         }
 
