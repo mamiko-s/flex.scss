@@ -30,7 +30,6 @@
             display: flex;
             column-gap: 10px;
             justify-content: center;
-
         }
 
         h1 {
@@ -43,6 +42,10 @@
             color: black;
             text-decoration: none;
         }
+
+        [class*="fa-bars"] {
+            color: whitesmoke;
+        }
     }
 
     nav {
@@ -50,13 +53,8 @@
         justify-content: space-between;
         align-items: center;
         box-shadow: 3px 2px #f6f4f4;
-
-        a {
-            text-decoration: none;
-            color: $defaultColor;
-            padding: 5%;
-            width: 100%;
-        }
+        padding: 2%;
+        background-color: white;
     }
 
     nav>ul {
@@ -67,13 +65,19 @@
         width: 80%;
         position: relative;
         text-align: right;
+
+        a {
+            text-decoration: none;
+            color: $defaultColor;
+            padding: 5%;
+            width: 100%;
+        }
     }
 
     summary {
         background-color: $defaultColor;
         padding: 3%;
         font-size: 20px;
-        color: whitesmoke !important;
     }
 
     details>ul {
